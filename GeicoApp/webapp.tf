@@ -11,8 +11,8 @@ resource "azurerm_service_plan" "companyplan" {
   ]
 }
 
-resource "azurerm_windows_web_app" "DOTWWW-PD1" {
-  name                = "DOTWWW-PD1"
+resource "azurerm_windows_web_app" "DOTWWW-PD" {
+  name                = "DOTWWW-PD8"
   resource_group_name = local.resource_group_name
   location            = local.location
   service_plan_id     = azurerm_service_plan.companyplan.id
